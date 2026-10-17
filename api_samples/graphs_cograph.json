@@ -1,0 +1,162 @@
+{
+ "graph": {
+  "n": 3,
+  "edges": [
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  "layout": {
+   "0": [
+    0.0,
+    -2.0
+   ],
+   "1": [
+    1.7321,
+    1.0
+   ],
+   "2": [
+    -1.7321,
+    1.0
+   ]
+  }
+ },
+ "cotree": {
+  "op": "join",
+  "children": [
+   {
+    "op": "union",
+    "children": [
+     {
+      "op": "v",
+      "vertex": 0
+     },
+     {
+      "op": "v",
+      "vertex": 1
+     }
+    ]
+   },
+   {
+    "op": "v",
+    "vertex": 2
+   }
+  ]
+ },
+ "twin_steps": [
+  {
+   "added": 2,
+   "twin_of": 0,
+   "kind": "true",
+   "case": 3,
+   "new_eigenvalue": "2"
+  },
+  {
+   "added": 1,
+   "twin_of": 0,
+   "kind": "false",
+   "case": 2,
+   "new_eigenvalue": "1"
+  }
+ ],
+ "spectrum_by_construction": {
+  "0": 1,
+  "2": 1,
+  "1": 1
+ },
+ "matrix": [
+  [
+   "1",
+   "0",
+   "-1/2√2"
+  ],
+  [
+   "0",
+   "1",
+   "-1/2√2"
+  ],
+  [
+   "-1/2√2",
+   "-1/2√2",
+   "1"
+  ]
+ ],
+ "matrix_approx": [
+  [
+   1.0,
+   0.0,
+   -0.707107
+  ],
+  [
+   0.0,
+   1.0,
+   -0.707107
+  ],
+  [
+   -0.707107,
+   -0.707107,
+   1.0
+  ]
+ ],
+ "lam": "1",
+ "verification": {
+  "product_is_zero": true,
+  "spectrum": [
+   {
+    "value": "0",
+    "multiplicity": 1
+   },
+   {
+    "value": "1",
+    "multiplicity": 1
+   },
+   {
+    "value": "2",
+    "multiplicity": 1
+   }
+  ],
+  "q": 3
+ },
+ "lower": [
+  {
+   "value": 3,
+   "text": "q(G) ≥ d(G) + 1 = 3, where d(G) = 2 is the largest distance between two vertices joined by a unique shortest path (for instance 0 and 1).",
+   "references": [
+    "ahmadi2013"
+   ],
+   "source": "Ahmadi et al. 2013, Theorem 3.2"
+  },
+  {
+   "value": 2,
+   "text": "q(G) ≥ 2, since G has an edge and a matrix with one eigenvalue is a multiple of the identity.",
+   "references": [],
+   "source": "elementary"
+  }
+ ],
+ "lower_value": 3,
+ "upper": {
+  "value": 3,
+  "text": "the matrix below, built by the construction in the proof of Theorem 4 and verified exactly, has 3 distinct eigenvalues.",
+  "references": [
+   "allem2026cographs"
+  ],
+  "source": "construction of Theorem 4, verified"
+ },
+ "exact": {
+  "value": 3,
+  "text": "G is the complete bipartite graph K_{1,2}, and q(K_{m,n}) = 3 when m ≠ n.",
+  "references": [
+   "ahmadi2013"
+  ],
+  "source": "Ahmadi et al. 2013"
+ },
+ "references": [
+  "ahmadi2013",
+  "allem2026cographs"
+ ]
+}

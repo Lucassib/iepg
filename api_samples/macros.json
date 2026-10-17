@@ -1,0 +1,16 @@
+{
+ "\\Spec": "\\operatorname{Spec}",
+ "\\DSpec": "\\operatorname{DSpec}",
+ "\\diam": "\\operatorname{diam}",
+ "\\tr": "\\operatorname{tr}",
+ "\\tL": "\\widetilde{\\Lambda}",
+ "\\lmin": "\\tilde\\lambda^{(#1)}_{\\min}",
+ "\\lmax": "\\tilde\\lambda^{(#1)}_{\\max}",
+ "\\lminp": "\\tilde\\lambda^{\\prime(#1)}_{\\min}",
+ "\\lmaxp": "\\tilde\\lambda^{\\prime(#1)}_{\\max}",
+ "\\nform": "\\varsigma",
+ "\\N": "\\mathbb{N}",
+ "\\R": "\\mathbb{R}",
+ "\\algorithmicrequire": "\\textbf{Input:}",
+ "\\algorithmicensure": "\\textbf{Output:}"
+}

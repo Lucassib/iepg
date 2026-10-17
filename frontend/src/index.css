@@ -1,0 +1,136 @@
+@import 'tailwindcss';
+@import 'katex/dist/katex.min.css';
+
+/* Design tokens (webapp_spec/11_design_system.md). No component uses a literal color. */
+:root {
+  --bg: #faf8f3;
+  --surface: #f3f0e8;
+  --text: #1b1a17;
+  --muted: #6b6862;
+  --border: #d9d4c7;
+  --root-red: #c8102e;
+  --state-diminimal: #2f6b3a;
+  --state-defective: #9a5b0a;
+  --state-unknown: #6b6862;
+  --note: #8a5c06;
+  --vertex-fill: var(--surface);
+  --edge: currentColor;
+  --edge-dashed: var(--muted);
+  --math-text: var(--text);
+  /* two neutral accents for copies of a composition (never red, never a status color) */
+  --copy-a: #3b6a92;
+  --copy-b: #7a5a93;
+  /* the veil of the guided tour */
+  --tour-dim: rgb(27 26 23 / 0.42);
+  /* syntax colors of the page Algorithms, apart from the status colors */
+  --code-kw: #7a3e9d;
+  --code-str: #5d6b1f;
+  --code-num: #3b6a92;
+  --code-fn: #1d5f8a;
+  --code-builtin: #8a4b2a;
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --bg: #16150f;
+  --surface: #1f1d17;
+  --text: #e6e2d8;
+  --muted: #9a968c;
+  --border: #3a372f;
+  --root-red: #ff5a5f;
+  --state-diminimal: #7fc98a;
+  --state-defective: #f0b451;
+  --state-unknown: #9a968c;
+  --note: #e3b04b;
+  --copy-a: #7fb0db;
+  --copy-b: #c29ad8;
+  --tour-dim: rgb(0 0 0 / 0.62);
+  --code-kw: #c9a3e0;
+  --code-str: #b8c97f;
+  --code-num: #8ab8e0;
+  --code-fn: #8cc6f0;
+  --code-builtin: #e0a87e;
+  color-scheme: dark;
+}
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+@theme {
+  --color-*: initial;
+  --color-paper: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-line: var(--border);
+  --color-root: var(--root-red);
+  --color-diminimal: var(--state-diminimal);
+  --color-defective: var(--state-defective);
+  --color-unknown: var(--state-unknown);
+  --color-note: var(--note);
+  --color-copy-a: var(--copy-a);
+  --color-copy-b: var(--copy-b);
+
+  --font-serif: 'Source Serif 4 Variable', 'Source Serif 4', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter Variable', Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --radius-md: 6px;
+}
+
+@layer base {
+  html {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: -0.005em;
+  }
+  .prose {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 68ch;
+  }
+  .prose p + p { margin-top: 0.75em; }
+  code, kbd, pre, .mono { font-family: var(--font-mono); }
+  .katex { color: var(--math-text); font-size: 1.02em; }
+  .katex-display { margin: 0.5em 0; overflow-x: auto; overflow-y: hidden; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+  ::selection { background: color-mix(in srgb, var(--text) 18%, transparent); }
+}
+
+/* Native range input styled with tokens (used by the player and the spectrum). */
+input[type='range'] {
+  accent-color: var(--text);
+  width: 100%;
+}
+
+/* Python on the page Algorithms (highlight.js classes) */
+.code-python .hljs-keyword,
+.code-python .hljs-literal { color: var(--code-kw); font-weight: 600; }
+.code-python .hljs-string { color: var(--code-str); }
+.code-python .hljs-number { color: var(--code-num); }
+.code-python .hljs-comment { color: var(--muted); font-style: italic; }
+.code-python .hljs-title.function_,
+.code-python .hljs-title.class_ { color: var(--code-fn); font-weight: 600; }
+.code-python .hljs-built_in,
+.code-python .hljs-type { color: var(--code-builtin); }
+.code-python .hljs-meta { color: var(--muted); }
+
+/* grid and flex items in the content may shrink below their content, so a wide matrix or tree scrolls in its card
+   instead of widening the page on a phone */
+main .grid > *,
+main .flex-1 {
+  min-width: 0;
+}

@@ -1,0 +1,96 @@
+{
+ "ok": false,
+ "reason": "condition C4 (μ₋ + λ₄ = λ₁ + λ₃) of Lemma lem:six-arms fails for R_3",
+ "conditions": {
+  "first": [
+   {
+    "name": "C2",
+    "text": "λ₁ + λ₅ = λ₂ + λ₄",
+    "ok": true
+   },
+   {
+    "name": "C3",
+    "text": "γ_L ≠ γ_R",
+    "ok": true
+   },
+   {
+    "name": "C4",
+    "text": "μ₋ + λ₄ = λ₁ + λ₃",
+    "ok": false
+   }
+  ],
+  "second": [
+   {
+    "name": "C3",
+    "text": "γ_L ≠ γ_R",
+    "ok": true
+   },
+   {
+    "name": "C4",
+    "text": "λ₂ + μ₊ = λ₃ + λ₅",
+    "ok": false
+   },
+   {
+    "name": "C6",
+    "text": "{λ₁,…,λ₅} is admissible",
+    "ok": true
+   }
+  ]
+ },
+ "info": {
+  "kind": "R",
+  "a": 3,
+  "b": 4,
+  "k": 3,
+  "even": false,
+  "first": "R̂_3",
+  "second": "R̂_4",
+  "Lambda": [
+   "-8",
+   "0",
+   "2",
+   "5",
+   "9",
+   "11",
+   "16"
+  ],
+  "e": "21",
+  "fail": "condition C4 (μ₋ + λ₄ = λ₁ + λ₃) of Lemma lem:six-arms fails for R_3",
+  "conditions": {
+   "first": [
+    {
+     "name": "C2",
+     "text": "λ₁ + λ₅ = λ₂ + λ₄",
+     "ok": true
+    },
+    {
+     "name": "C3",
+     "text": "γ_L ≠ γ_R",
+     "ok": true
+    },
+    {
+     "name": "C4",
+     "text": "μ₋ + λ₄ = λ₁ + λ₃",
+     "ok": false
+    }
+   ],
+   "second": [
+    {
+     "name": "C3",
+     "text": "γ_L ≠ γ_R",
+     "ok": true
+    },
+    {
+     "name": "C4",
+     "text": "λ₂ + μ₊ = λ₃ + λ₅",
+     "ok": false
+    },
+    {
+     "name": "C6",
+     "text": "{λ₁,…,λ₅} is admissible",
+     "ok": true
+    }
+   ]
+  }
+ }
+}

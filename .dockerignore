@@ -1,0 +1,9 @@
+# Only what the Dockerfile copies goes to the build: the backend code and data, the lock, the bundle, the build.
+*
+!backend/requirements.lock
+!backend/iepg/
+!backend/data/
+!build/thesis/
+!frontend/dist/
+**/__pycache__
+**/*.pyc

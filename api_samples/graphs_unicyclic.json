@@ -1,0 +1,132 @@
+{
+ "graph": {
+  "n": 7,
+  "edges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    5,
+    6
+   ]
+  ],
+  "layout": {
+   "0": [
+    0.0,
+    -1.2
+   ],
+   "1": [
+    1.2,
+    0.0
+   ],
+   "2": [
+    0.0,
+    1.2
+   ],
+   "3": [
+    -1.2,
+    0.0
+   ],
+   "4": [
+    0.0,
+    -2.1
+   ],
+   "5": [
+    0.0,
+    -3.0
+   ],
+   "6": [
+    0.0,
+    -3.9
+   ]
+  }
+ },
+ "kind": "tadpole",
+ "params": {
+  "k": 4,
+  "n": 3
+ },
+ "cycle": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "girth": 4,
+ "pendant": {
+  "0": [
+   0,
+   4,
+   5,
+   6
+  ],
+  "1": [
+   1
+  ],
+  "2": [
+   2
+  ],
+  "3": [
+   3
+  ]
+ },
+ "lower": [
+  {
+   "value": 5,
+   "text": "q(G) ≥ d(G) + 1 = 5, where d(G) = 4 is the largest distance between two vertices joined by a unique shortest path (for instance 1 and 6).",
+   "references": [
+    "ahmadi2013"
+   ],
+   "source": "Ahmadi et al. 2013, Theorem 3.2"
+  },
+  {
+   "value": 2,
+   "text": "q(G) ≥ 2, since G has an edge and a matrix with one eigenvalue is a multiple of the identity.",
+   "references": [],
+   "source": "elementary"
+  }
+ ],
+ "lower_value": 5,
+ "upper": {
+  "value": 5,
+  "text": "q(G) ≤ n − ⌊k/2⌋ = 7 − 2 = 5, since G contains a cycle of length k = 4.",
+  "references": [
+   "barrett2017generalizations"
+  ],
+  "source": "Barrett et al. 2017, Corollary 4.12"
+ },
+ "exact": {
+  "value": 5,
+  "text": "G is the (4, 3)-tadpole and 3 ≤ k < 2n, so q(G) = n + ⌈k/2⌉ = 5.",
+  "references": [
+   "braga2025short"
+  ],
+  "source": "Braga et al. 2025, Theorem 3.2"
+ },
+ "references": [
+  "ahmadi2013",
+  "barrett2017generalizations",
+  "braga2025short"
+ ]
+}

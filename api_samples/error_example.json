@@ -1,0 +1,6 @@
+{
+ "detail": {
+  "code": "BAD_OP",
+  "detail": "duplication 1 would change the diameter"
+ }
+}

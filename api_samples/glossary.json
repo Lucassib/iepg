@@ -1,0 +1,658 @@
+[
+ {
+  "key": "admissible",
+  "term": "admissible",
+  "text": "Every set $\\{\\lambda_0<\\lambda_1<\\lambda_2\\}$ of three real numbers is admissible. For $k\\geq 2$, a set $\\Lambda=\\{\\lambda_0<\\cdots<\\lambda_{2k}\\}$ is admissible if $\\gamma_L\\neq\\gamma_R$, the interior $\\Lambda_0$ is admissible, and, moreover, $\\Lambda_+$ is admissible when $\\gamma_R>\\gamma_L$, while $\\Lambda_-$ is admissible when $\\gamma_L>\\gamma_R$.",
+  "ref": "Definition 6.17",
+  "label": "def:admissible",
+  "source": "definition"
+ },
+ {
+  "key": "base pair",
+  "term": "base pair",
+  "text": "Let $k\\geq 3$, let $h$ be an integer with $2\\leq h\\leq k$, and let $H_{h-1}$ and $H_h$ be rooted trees of depths $h-1$ and $h$, respectively. The tower of depth $k$ over the base pair $(H_{h-1},H_h)$ is the sequence $H_{h-1},\\ H_h,\\ H_{h+1},\\ \\ldots,\\ H_k, \\qquad\\text{where}\\quad H_j=H_{j-2}\\odot H_{j-1}\\quad\\text{for } h<j\\leq k.$ Its terms are the levels of the tower, and we identify the tower with its last term $H_k$.",
+  "ref": "Definition 6.29",
+  "label": "def:tower",
+  "source": "definition"
+ },
+ {
+  "key": "bottom-up",
+  "term": "bottom-up",
+  "text": "The ordering $v_1,\\ldots,v_n$ of $V$ used by the algorithm is any ordering in which every vertex appears after all its children, so that $v_n=r$. Such an ordering is called bottom-up.",
+  "ref": "Section 3.5",
+  "label": "sec:diagonalize",
+  "source": "text"
+ },
+ {
+  "key": "branch",
+  "term": "branch",
+  "text": "Given a tree $T$, not necessarily rooted, and a vertex $y$ of $T$, a branch of $T$ at $y$ is a connected component $U$ of $T-y$, which we regard as a rooted tree whose root is the vertex of $U$ adjacent to $y$.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "brick",
+  "term": "brick",
+  "text": "Let $T$ be a tree with diameter $d$, rooted at a main root $r$, and let $M\\in\\mathcal{S}(T)$. We say that $M$ is a brick (with respect to $r$) if $q(M)=d+1$ and $\\Delta(M)=\\Delta_c(M)$, that is, if $M$ has the minimum number of distinct eigenvalues allowed by Theorem 3.2 and all its latent values are confined.",
+  "ref": "Definition 6.9",
+  "label": "def:brick",
+  "source": "definition"
+ },
+ {
+  "key": "bricks",
+  "term": "bricks",
+  "text": "We call such realizations $M$ bricks.",
+  "ref": "Chapter 6",
+  "label": "chap:diminimal",
+  "source": "text"
+ },
+ {
+  "key": "child",
+  "term": "child",
+  "text": "A rooted tree is a tree $T$ together with a distinguished vertex $r$, its root. Each neighbor of $r$ is a child of $r$, and $r$ is its parent.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "confined",
+  "term": "confined",
+  "text": "Let $T$ be a tree with diameter $d$, rooted at a main root $r$, and let $M\\in\\mathcal S(T)$. A latent value $\\lambda$ of $M$ is confined (with respect to $r$) if every vertex $w$ with $\\hat d_w=0$ in Diagonalize$(M,-\\lambda)$ is a main root of $T$ other than $r$. We write $\\Delta_c(M)$ for the set of confined latent values of $M$.",
+  "ref": "Definition 4.23",
+  "label": "def:confined",
+  "source": "definition"
+ },
+ {
+  "key": "congruent",
+  "term": "congruent",
+  "text": "For a real symmetric matrix $M$ whose underlying graph is a tree and a real number $x$, Algorithm Diagonalize (see Figure 3.7) finds a diagonal matrix $D$ that is congruent to $M+xI$, that is, $D=P(M+xI)P^{\\top}$ for some invertible matrix $P$.",
+  "ref": "Section 3.5",
+  "label": "sec:diagonalize",
+  "source": "text"
+ },
+ {
+  "key": "connected",
+  "term": "connected",
+  "text": "A graph is connected if every pair of vertices is joined by a path.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "defective",
+  "term": "defective",
+  "text": "A rooted seed $R$ of depth $j\\geq3$ is defective if some rooted unfolding of $R$, viewed as a tree, has diameter $2j$ and is not diminimal. Rooted seeds that are not defective are called good. We denote by $b_j$ the number of defective rooted seeds of depth $j$ and set $g_j=\\rho_j-b_j$.",
+  "ref": "Definition 7.13",
+  "label": "def:bad-arm",
+  "source": "definition"
+ },
+ {
+  "key": "defective seed",
+  "term": "defective seed",
+  "text": "If $q(T)=d(S)+1$ for all $T\\in\\mathcal{T}(S)$, then $S$ is called a diminimal seed. Otherwise, $S$ is said to be a defective seed.",
+  "ref": "Section 3.3",
+  "label": "sec:branchs",
+  "source": "text"
+ },
+ {
+  "key": "depth",
+  "term": "depth",
+  "text": "The depth of a vertex $v$ is the distance $d_T(r,v)$, and the depth of $T$ is the largest depth of a vertex of $T$, that is, the length of a longest path between $r$ and a leaf, so that a rooted tree of depth $k$ has vertices at depths $0,1,\\ldots,k$.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "diameter",
+  "term": "diameter",
+  "text": "The diameter of $G$, denoted $d(G)$, is defined as \\[ d(G)=\\max\\{d_G(u,v)\\colon u,v\\in V\\}.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "diameter minimal",
+  "term": "diameter minimal",
+  "text": "A tree $T$ is said to be diameter minimal, or diminimal for short, if $q(T)=d(T)+1$.",
+  "ref": "Section 3.2",
+  "label": "sec:iepg",
+  "source": "text"
+ },
+ {
+  "key": "diameter-preserving",
+  "term": "diameter-preserving",
+  "text": "An ABD is called diameter-preserving if its underlying CBD preserves the diameter of the tree, as in Lemma 4.5.",
+  "ref": "Section 4.3",
+  "label": "sec:abd",
+  "source": "text"
+ },
+ {
+  "key": "diminimal",
+  "term": "diminimal",
+  "text": "A tree $T$ is said to be diameter minimal, or diminimal for short, if $q(T)=d(T)+1$.",
+  "ref": "Section 3.2",
+  "label": "sec:iepg",
+  "source": "text"
+ },
+ {
+  "key": "diminimal seed",
+  "term": "diminimal seed",
+  "text": "If $q(T)=d(S)+1$ for all $T\\in\\mathcal{T}(S)$, then $S$ is called a diminimal seed.",
+  "ref": "Section 3.3",
+  "label": "sec:branchs",
+  "source": "text"
+ },
+ {
+  "key": "disparity",
+  "term": "disparity",
+  "text": "In the other direction, Cinzori, Johnson and Lang [Cinzori et al. 2022] gave, for every diameter $d$, an explicit upper bound on the disparity $q(T)-d(T)-1$ over the trees of diameter $d$.",
+  "ref": "Section 3.2",
+  "label": "sec:iepg",
+  "source": "text"
+ },
+ {
+  "key": "distance",
+  "term": "distance",
+  "text": "Given a connected graph $G$, the distance $d_G(u,v)$ between two vertices $u$ and $v$ is the length of a shortest path joining them, where the length of a path is its number of edges.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "final value",
+  "term": "final value",
+  "text": "The value assigned to a vertex $v$ at the moment it is processed is its temporary value, denoted $\\hat d_v$, and the value held by $v$ when the algorithm ends is its final value, denoted $d_v$.",
+  "ref": "Section 3.5",
+  "label": "sec:diagonalize",
+  "source": "text"
+ },
+ {
+  "key": "good",
+  "term": "good",
+  "text": "A rooted seed $R$ of depth $j\\geq3$ is defective if some rooted unfolding of $R$, viewed as a tree, has diameter $2j$ and is not diminimal. Rooted seeds that are not defective are called good. We denote by $b_j$ the number of defective rooted seeds of depth $j$ and set $g_j=\\rho_j-b_j$.",
+  "ref": "Definition 7.13",
+  "label": "def:bad-arm",
+  "source": "definition"
+ },
+ {
+  "key": "interior",
+  "term": "interior",
+  "text": "The interior of a set with at least two elements is the set obtained from it by removing its least and its greatest elements.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "latent values",
+  "term": "latent values",
+  "text": "We call the elements of $\\Delta(M)=\\mathcal Z(M)\\setminus\\DSpec(M)$ the latent values of $M$.",
+  "ref": "Section 4.2",
+  "label": "sec:temporary",
+  "source": "text"
+ },
+ {
+  "key": "lateral",
+  "term": "lateral",
+  "text": "Recall that the interior of a finite set of at least two real numbers is the set obtained from it by removing its least and greatest elements. Each step of the recursion combines strong realizations of two sets of cardinality $2k-1$, the interior $ \\Lambda_0=\\{\\lambda_1,\\ldots,\\lambda_{2k-1}\\}, $ and one of the two lateral sets $ \\Lambda_+=\\{\\lambda_2<\\cdots<\\lambda_{2k-1}<\\mu_+\\}, \\qquad \\mu_+=\\lambda_0+\\lambda_{2k}-\\lambda_1, $ or $ \\Lambda_-=\\{\\mu_-<\\lambda_1<\\cdots<\\lambda_{2k-2}\\}, \\qquad \\mu_-=\\lambda_0+\\lambda_{2k}-\\lambda_{2k-1}. $ The choice of the lateral set is not arbitrary.",
+  "ref": "Section 6.3",
+  "label": "sec:bricks",
+  "source": "text"
+ },
+ {
+  "key": "leaf",
+  "term": "leaf",
+  "text": "A vertex without children is a leaf of the rooted tree.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "levels",
+  "term": "levels",
+  "text": "Let $k\\geq 3$, let $h$ be an integer with $2\\leq h\\leq k$, and let $H_{h-1}$ and $H_h$ be rooted trees of depths $h-1$ and $h$, respectively. The tower of depth $k$ over the base pair $(H_{h-1},H_h)$ is the sequence $H_{h-1},\\ H_h,\\ H_{h+1},\\ \\ldots,\\ H_k, \\qquad\\text{where}\\quad H_j=H_{j-2}\\odot H_{j-1}\\quad\\text{for } h<j\\leq k.$ Its terms are the levels of the tower, and we identify the tower with its last term $H_k$.",
+  "ref": "Definition 6.29",
+  "label": "def:tower",
+  "source": "definition"
+ },
+ {
+  "key": "linear trees",
+  "term": "linear trees",
+  "text": "More recently, Johnson and Wakhare [Johnson and Wakhare 2022] proved the same equality for linear trees, namely the trees in which all vertices of degree at least three lie on a common path.",
+  "ref": "Section 3.2",
+  "label": "sec:iepg",
+  "source": "text"
+ },
+ {
+  "key": "longest path",
+  "term": "longest path",
+  "text": "In a tree, there is a unique path joining any pair of vertices, and a path is a longest path of the tree if its length equals the diameter.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "main edge",
+  "term": "main edge",
+  "text": "Let $T=(V,E)$ be a tree with diameter $d$. (a) If $d=2k$ for some integer $k\\geq0$, then $v\\in V$ is the main root of $T$ if it is the central vertex of a longest path of $T$. (b) If $d=2k+1$ for some integer $k\\geq0$, then $e\\in E$ is the main edge of $T$ if it is the central edge of a longest path of $T$. Each endpoint of $e$ is called a main root of $T$.",
+  "ref": "Definition 3.5",
+  "label": "mainrooteven",
+  "source": "definition"
+ },
+ {
+  "key": "main root",
+  "term": "main root",
+  "text": "Let $T=(V,E)$ be a tree with diameter $d$. (a) If $d=2k$ for some integer $k\\geq0$, then $v\\in V$ is the main root of $T$ if it is the central vertex of a longest path of $T$. (b) If $d=2k+1$ for some integer $k\\geq0$, then $e\\in E$ is the main edge of $T$ if it is the central edge of a longest path of $T$. Each endpoint of $e$ is called a main root of $T$.",
+  "ref": "Definition 3.5",
+  "label": "mainrooteven",
+  "source": "definition"
+ },
+ {
+  "key": "missing eigenvalue",
+  "term": "missing eigenvalue",
+  "text": "Any eigenvalue of $M[T_i]$ that is not an eigenvalue of $M$ is called a missing eigenvalue of the branch $T_i$.",
+  "ref": "Section 5.1",
+  "label": "sec:d6",
+  "source": "text"
+ },
+ {
+  "key": "missing eigenvalues",
+  "term": "missing eigenvalues",
+  "text": "Let $T$ be a tree of depth $k$ rooted at $v$ and let $A\\in\\mathcal{S}(T)$. For $j\\in\\{0,1,\\ldots,k\\}$, we define { $ \\sigma_j(A)=\\{\\lambda\\in\\Spec(A) \\colon \\hat{L}(A,\\lambda)=j\\},, \\sigma^*(A)=\\DSpec(A[T-v])\\setminus\\DSpec(A). $ } The elements of $\\sigma^*(A)$ are called the missing eigenvalues of $A$.",
+  "ref": "Definition 4.11",
+  "label": "def:sigma",
+  "source": "definition"
+ },
+ {
+  "key": "n-shifted replica",
+  "term": "$n$-shifted replica",
+  "text": "Given $n\\in\\mathbb{N}$, we say that $T'=(V',E')$ is the $n$-shifted replica of $T=(\\{v_1,\\ldots,v_m\\},E)$ if $V'=\\{v_{n+1},\\ldots,v_{n+m}\\}$ and $\\{v_{n+i}, v_{n+j}\\}\\in E'$ if and only if $\\{v_{i}, v_{j}\\}\\in E$, for $i,j\\in[m]$.",
+  "ref": "Section 6.3",
+  "label": "sec:bricks",
+  "source": "text"
+ },
+ {
+  "key": "outer gaps",
+  "term": "outer gaps",
+  "text": "The recursion is driven by the two outer gaps of the prescribed set, $\\gamma_L=\\lambda_1-\\lambda_0$ and $\\gamma_R=\\lambda_{2k}-\\lambda_{2k-1}$.",
+  "ref": "Section 6.3",
+  "label": "sec:bricks",
+  "source": "text"
+ },
+ {
+  "key": "parent",
+  "term": "parent",
+  "text": "A rooted tree is a tree $T$ together with a distinguished vertex $r$, its root. Each neighbor of $r$ is a child of $r$, and $r$ is its parent.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "path",
+  "term": "path",
+  "text": "For example, the path $P_n$, with vertices $v_1,\\ldots,v_n$ and edges $\\{v_i,v_{i+1}\\}$ for $i\\in[n-1]$, is a tree of diameter $n-1$.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "realization",
+  "term": "realization",
+  "text": "A matrix $M\\in\\mathcal{S}(G)$ with $q(M)=q(G)$ is called a realization of $q(G)$.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "regular s-algebraic branch duplication",
+  "term": "regular $s$-algebraic branch duplication",
+  "text": "Let $T$ be a tree, let $U$ be a branch of $T$ at a vertex $y$ with root $u$, and let $T'$ be the tree obtained from $T$ by an $s$-combinatorial branch duplication of $U$, with copies $U_0,\\ldots,U_s$ of $U$ rooted at $u_0,\\ldots,u_s$, respectively, where $U_0=U$ and $u_0=u$. Given $M\\in\\mathcal{S}(T)$, a matrix $M'=(m'_{ij})\\in\\mathcal{S}(T')$ is obtained from $M$ by a regular $s$-algebraic branch duplication (regular $s$-ABD) of $U$ at $y$ if (i) $M'[T'-\\bigcup_{i=0}^{s}U_i]=M[T-U]$; (ii) $M'[U_i] = M[U]$ for every $i\\in\\{0,\\ldots,s\\}$; (iii) $m'_{yu_i}=\\frac{m_{yu}}{\\sqrt{s+1}}$ for every $i\\in\\{0,\\ldots,s\\}$.",
+  "ref": "Definition 4.18",
+  "label": "def:abd",
+  "source": "definition"
+ },
+ {
+  "key": "root",
+  "term": "root",
+  "text": "A rooted tree is a tree $T$ together with a distinguished vertex $r$, its root.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "rooted seed",
+  "term": "rooted seed",
+  "text": "A rooted seed is a rooted tree in which no vertex has two isomorphic branches that do not contain the root, so that no branch can be duplicated without repeating a branch.",
+  "ref": "Section 3.3",
+  "label": "sec:branchs",
+  "source": "text"
+ },
+ {
+  "key": "rooted seed of depth k",
+  "term": "rooted seed of depth $k$",
+  "text": "Recall from Section 4.1 that a tree $T$ is twin-free if no vertex of $T$ has two distinct isomorphic branches, and that a rooted tree $R$ is twin-free if, for every vertex $w$ of $R$, the subtrees of $R$ rooted at the children of $w$ are pairwise non-isomorphic as rooted trees. A rooted seed of depth $k$, in the terminology of [Johnson et al. 2020], is a twin-free rooted tree of depth $k$, considered up to root-preserving isomorphism. We write $\\rho_k$ for the number of rooted seeds of depth $k$, $N_k=\\rho_0+\\rho_1+\\cdots+\\rho_k$ for the number of rooted seeds of depth at most $k$, and $s_d$ for the number of seeds of diameter $d$.",
+  "ref": "Definition 7.7",
+  "label": "def:arms",
+  "source": "definition"
+ },
+ {
+  "key": "rooted seeds",
+  "term": "rooted seeds",
+  "text": "The characterizations and the counts are essentially due to Johnson, Lettie, Mack-Crane and Szabelska-Ber\\k{e}sewicz [Johnson et al. 2020], in the language of rooted seeds: a rooted seed of height $h$ is exactly a twin-free rooted tree of depth $h$ in our terminology, and their count $a_n=2^{a_{n-1}}$ of rooted seeds of height at most $n$ is our $N_n$.",
+  "ref": "Section 7.2",
+  "label": "sec:counting",
+  "source": "text"
+ },
+ {
+  "key": "rooted tree",
+  "term": "rooted tree",
+  "text": "A rooted tree is a tree $T$ together with a distinguished vertex $r$, its root.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "rooted unfolding",
+  "term": "rooted unfolding",
+  "text": "Let $R$ be a tree rooted at $r$. A rooted unfolding of $R$ is any tree $\\bar{R}$, rooted at $r$, obtained from $R$ by a finite sequence of CBDs, each of which duplicates, at an arbitrary vertex, a branch that does not contain the root $r$.",
+  "ref": "Definition 7.1",
+  "label": "def:rooted-unfolding",
+  "source": "definition"
+ },
+ {
+  "key": "s-algebraic branch duplication",
+  "term": "$s$-algebraic branch duplication",
+  "text": "Given $M\\in\\mathcal{S}(T)$, we say that a matrix $M'=(m'_{ij})\\in\\mathcal{S}(T')$ is obtained from $M$ by an $s$-algebraic branch duplication ($s$-ABD, for short) of $U$ at $y$ if the following hold: (a) $M'[T'-\\bigcup_{i=0}^{s}U_i]=M[T-U]$ and $M'[U_i]=M[U]$ for every $i\\in\\{0,\\ldots,s\\}$; (b) the entries $m'_{yu_0},m'_{yu_1},\\ldots,m'_{yu_s}$ are nonzero and satisfy $(m'_{yu_0})^2+(m'_{yu_1})^2+\\cdots+(m'_{yu_s})^2=(m_{yu})^2.$ The following result of Johnson and Saiago [Johnson and Saiago 2008] determines how the characteristic polynomial $p_{M'}(t)=\\det(tI-M')$ of an ABD relates to the characteristic polynomial of the original matrix.",
+  "ref": "Section 3.4",
+  "label": "sec:abd-js",
+  "source": "text"
+ },
+ {
+  "key": "s-combinatorial branch duplication",
+  "term": "$s$-combinatorial branch duplication",
+  "text": "Given an integer $s\\geq 1$, an $s$-combinatorial branch duplication ($s$-CBD, for short) of $U$ at $y$ produces the tree $T'$ obtained from $T$ by appending $s$ new copies of $U$ at $y$, each joined to $y$ by an edge between $y$ and the copy of $u$.",
+  "ref": "Section 3.3",
+  "label": "sec:branchs",
+  "source": "text"
+ },
+ {
+  "key": "seed",
+  "term": "seed",
+  "text": "A seed is a tree that is not an unfolding of any tree with fewer vertices and the same diameter, that is, a tree that is not a diameter-preserving $s$-CBD, with $s\\geq 1$, of a smaller tree.",
+  "ref": "Section 3.3",
+  "label": "sec:branchs",
+  "source": "text"
+ },
+ {
+  "key": "spectrum",
+  "term": "spectrum",
+  "text": "Given a real symmetric matrix $M$, its spectrum, denoted $\\Spec(M)$, is the multiset of its eigenvalues, with each value appearing according to its multiplicity.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "standard branches",
+  "term": "standard branches",
+  "text": "Let $k\\geq1$. Let $T$ be a tree of diameter $2k$ with main root $v$. The standard branches of $T$ are the branches of $T$ at $v$ whose depth is exactly $k-1$. If $T$ has diameter $2k+1$ with main edge $\\{r,u\\}$, the standard branches of $T$ at $u$ are the branches of $T$ at $u$, other than the branch containing $r$, whose depth is exactly $k-1$.",
+  "ref": "Definition 4.6",
+  "label": "def:standard",
+  "source": "definition"
+ },
+ {
+  "key": "standard branches of T at u",
+  "term": "standard branches of $T$ at $u$",
+  "text": "Let $k\\geq1$. Let $T$ be a tree of diameter $2k$ with main root $v$. The standard branches of $T$ are the branches of $T$ at $v$ whose depth is exactly $k-1$. If $T$ has diameter $2k+1$ with main edge $\\{r,u\\}$, the standard branches of $T$ at $u$ are the branches of $T$ at $u$, other than the branch containing $r$, whose depth is exactly $k-1$.",
+  "ref": "Definition 4.6",
+  "label": "def:standard",
+  "source": "definition"
+ },
+ {
+  "key": "starlike",
+  "term": "starlike",
+  "text": "A tree is starlike if it has at most one vertex of degree greater than two.",
+  "ref": "Section 3.2",
+  "label": "sec:iepg",
+  "source": "text"
+ },
+ {
+  "key": "strong realization",
+  "term": "strong realization",
+  "text": "Given an integer $k\\geq 0$, a set of real numbers $A = \\{\\lambda_0<\\cdots<\\lambda_{2k}\\}$ is said to be strongly realizable in a family of rooted trees $\\mathcal{C}=\\{T_i\\}_{i\\in\\mathcal{I}}$, where $\\mathcal{I}$ is a set of indices, if the following holds for every $T\\in \\mathcal{C}$ of depth $k$ and root $r$. There exists $M\\in \\mathcal{S}(T)$ satisfying: • $\\DSpec(M) \\subseteq A$; • $L(M,\\lambda_{2i})=0$, $0\\leq i\\leq k$; • $m_{M[T-r]}(\\lambda_{2i-1})=m_{M}(\\lambda_{2i-1})+1$, $1\\leq i\\leq k$. A matrix $M$ with the above properties is said to be a strong realization of $A$ in $\\mathcal{C}$.",
+  "ref": "Definition 6.4",
+  "label": "def:strongly-realizable",
+  "source": "definition"
+ },
+ {
+  "key": "strongly realizable",
+  "term": "strongly realizable",
+  "text": "Given an integer $k\\geq 0$, a set of real numbers $A = \\{\\lambda_0<\\cdots<\\lambda_{2k}\\}$ is said to be strongly realizable in a family of rooted trees $\\mathcal{C}=\\{T_i\\}_{i\\in\\mathcal{I}}$, where $\\mathcal{I}$ is a set of indices, if the following holds for every $T\\in \\mathcal{C}$ of depth $k$ and root $r$. There exists $M\\in \\mathcal{S}(T)$ satisfying: • $\\DSpec(M) \\subseteq A$; • $L(M,\\lambda_{2i})=0$, $0\\leq i\\leq k$; • $m_{M[T-r]}(\\lambda_{2i-1})=m_{M}(\\lambda_{2i-1})+1$, $1\\leq i\\leq k$. A matrix $M$ with the above properties is said to be a strong realization of $A$ in $\\mathcal{C}$.",
+  "ref": "Definition 6.4",
+  "label": "def:strongly-realizable",
+  "source": "definition"
+ },
+ {
+  "key": "strongly realizable set",
+  "term": "strongly realizable set",
+  "text": "One of the core ideas in [Allem et al. 2023] was the notion of strongly realizable set for a given family of rooted trees $\\mathcal{C}$.",
+  "ref": "Section 6.1",
+  "label": "sec:sr",
+  "source": "text"
+ },
+ {
+  "key": "symmetric",
+  "term": "symmetric",
+  "text": "A matrix $M=(m_{ij})\\in\\mathbb{R}^{n\\times n}$ is symmetric if $M=M^\\top$, that is, if $m_{ij}=m_{ji}$ for all $i$ and $j$.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "temporary value",
+  "term": "temporary value",
+  "text": "The value assigned to a vertex $v$ at the moment it is processed is its temporary value, denoted $\\hat d_v$, and the value held by $v$ when the algorithm ends is its final value, denoted $d_v$.",
+  "ref": "Section 3.5",
+  "label": "sec:diagonalize",
+  "source": "text"
+ },
+ {
+  "key": "temporary zero set",
+  "term": "temporary zero set",
+  "text": "Let $T$ be a rooted tree and let $M\\in\\mathcal{S}(T)$. The temporary zero set $\\mathcal{Z}(M)\\subseteq \\mathbb{R}$ consists of all $\\lambda\\in\\mathbb{R}$ for which there exists $v\\in V(T)$ with $\\hat{d}_v=0$ in Diagonalize$(M,-\\lambda)$.",
+  "ref": "Definition 4.16",
+  "label": "def:zeros",
+  "source": "definition"
+ },
+ {
+  "key": "tight",
+  "term": "tight",
+  "text": "We say that a strong realization $M$ of a set $\\Lambda$ in a singleton family $\\{T\\}$, with a fixed root, is tight if $\\mathcal Z(M)=\\Lambda$.",
+  "ref": "Section 6.3",
+  "label": "sec:bricks",
+  "source": "text"
+ },
+ {
+  "key": "tower",
+  "term": "tower",
+  "text": "Let $k\\geq 3$, let $h$ be an integer with $2\\leq h\\leq k$, and let $H_{h-1}$ and $H_h$ be rooted trees of depths $h-1$ and $h$, respectively. The tower of depth $k$ over the base pair $(H_{h-1},H_h)$ is the sequence $H_{h-1},\\ H_h,\\ H_{h+1},\\ \\ldots,\\ H_k, \\qquad\\text{where}\\quad H_j=H_{j-2}\\odot H_{j-1}\\quad\\text{for } h<j\\leq k.$ Its terms are the levels of the tower, and we identify the tower with its last term $H_k$.",
+  "ref": "Definition 6.29",
+  "label": "def:tower",
+  "source": "definition"
+ },
+ {
+  "key": "tree",
+  "term": "tree",
+  "text": "A tree is a connected acyclic graph.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "twin-free",
+  "term": "twin-free",
+  "text": "We say that a tree $T$ is twin-free if no vertex of $T$ has two distinct branches that are isomorphic as trees rooted at the corresponding neighbors of that vertex (see Figure 4.1).",
+  "ref": "Section 4.1",
+  "label": "sec:twinfree",
+  "source": "text"
+ },
+ {
+  "key": "underlying graph",
+  "term": "underlying graph",
+  "text": "We say that $G$ is the underlying graph of any matrix $M\\in\\mathcal{S}(G)$.",
+  "ref": "Section 3.1",
+  "label": "sec:basic_defs",
+  "source": "text"
+ },
+ {
+  "key": "unfolding",
+  "term": "unfolding",
+  "text": "A tree obtained from $T$ through a finite, possibly empty, sequence of diameter-preserving CBDs is called an unfolding of $T$, so that every tree is an unfolding of itself.",
+  "ref": "Section 3.3",
+  "label": "sec:branchs",
+  "source": "text"
+ },
+ {
+  "key": "CBD",
+  "term": "$s$-combinatorial branch duplication",
+  "text": "Given an integer $s\\geq 1$, an $s$-combinatorial branch duplication ($s$-CBD, for short) of $U$ at $y$ produces the tree $T'$ obtained from $T$ by appending $s$ new copies of $U$ at $y$, each joined to $y$ by an edge between $y$ and the copy of $u$.",
+  "ref": "Section 3.3",
+  "label": "sec:branchs",
+  "source": "text",
+  "alias_of": "s-combinatorial branch duplication"
+ },
+ {
+  "key": "CBDs",
+  "term": "$s$-combinatorial branch duplication",
+  "text": "Given an integer $s\\geq 1$, an $s$-combinatorial branch duplication ($s$-CBD, for short) of $U$ at $y$ produces the tree $T'$ obtained from $T$ by appending $s$ new copies of $U$ at $y$, each joined to $y$ by an edge between $y$ and the copy of $u$.",
+  "ref": "Section 3.3",
+  "label": "sec:branchs",
+  "source": "text",
+  "alias_of": "s-combinatorial branch duplication"
+ },
+ {
+  "key": "ABD",
+  "term": "regular $s$-algebraic branch duplication",
+  "text": "Let $T$ be a tree, let $U$ be a branch of $T$ at a vertex $y$ with root $u$, and let $T'$ be the tree obtained from $T$ by an $s$-combinatorial branch duplication of $U$, with copies $U_0,\\ldots,U_s$ of $U$ rooted at $u_0,\\ldots,u_s$, respectively, where $U_0=U$ and $u_0=u$. Given $M\\in\\mathcal{S}(T)$, a matrix $M'=(m'_{ij})\\in\\mathcal{S}(T')$ is obtained from $M$ by a regular $s$-algebraic branch duplication (regular $s$-ABD) of $U$ at $y$ if (i) $M'[T'-\\bigcup_{i=0}^{s}U_i]=M[T-U]$; (ii) $M'[U_i] = M[U]$ for every $i\\in\\{0,\\ldots,s\\}$; (iii) $m'_{yu_i}=\\frac{m_{yu}}{\\sqrt{s+1}}$ for every $i\\in\\{0,\\ldots,s\\}$.",
+  "ref": "Definition 4.18",
+  "label": "def:abd",
+  "source": "definition",
+  "alias_of": "regular s-algebraic branch duplication"
+ },
+ {
+  "key": "ABDs",
+  "term": "regular $s$-algebraic branch duplication",
+  "text": "Let $T$ be a tree, let $U$ be a branch of $T$ at a vertex $y$ with root $u$, and let $T'$ be the tree obtained from $T$ by an $s$-combinatorial branch duplication of $U$, with copies $U_0,\\ldots,U_s$ of $U$ rooted at $u_0,\\ldots,u_s$, respectively, where $U_0=U$ and $u_0=u$. Given $M\\in\\mathcal{S}(T)$, a matrix $M'=(m'_{ij})\\in\\mathcal{S}(T')$ is obtained from $M$ by a regular $s$-algebraic branch duplication (regular $s$-ABD) of $U$ at $y$ if (i) $M'[T'-\\bigcup_{i=0}^{s}U_i]=M[T-U]$; (ii) $M'[U_i] = M[U]$ for every $i\\in\\{0,\\ldots,s\\}$; (iii) $m'_{yu_i}=\\frac{m_{yu}}{\\sqrt{s+1}}$ for every $i\\in\\{0,\\ldots,s\\}$.",
+  "ref": "Definition 4.18",
+  "label": "def:abd",
+  "source": "definition",
+  "alias_of": "regular s-algebraic branch duplication"
+ },
+ {
+  "key": "regular ABD",
+  "term": "regular $s$-algebraic branch duplication",
+  "text": "Let $T$ be a tree, let $U$ be a branch of $T$ at a vertex $y$ with root $u$, and let $T'$ be the tree obtained from $T$ by an $s$-combinatorial branch duplication of $U$, with copies $U_0,\\ldots,U_s$ of $U$ rooted at $u_0,\\ldots,u_s$, respectively, where $U_0=U$ and $u_0=u$. Given $M\\in\\mathcal{S}(T)$, a matrix $M'=(m'_{ij})\\in\\mathcal{S}(T')$ is obtained from $M$ by a regular $s$-algebraic branch duplication (regular $s$-ABD) of $U$ at $y$ if (i) $M'[T'-\\bigcup_{i=0}^{s}U_i]=M[T-U]$; (ii) $M'[U_i] = M[U]$ for every $i\\in\\{0,\\ldots,s\\}$; (iii) $m'_{yu_i}=\\frac{m_{yu}}{\\sqrt{s+1}}$ for every $i\\in\\{0,\\ldots,s\\}$.",
+  "ref": "Definition 4.18",
+  "label": "def:abd",
+  "source": "definition",
+  "alias_of": "regular s-algebraic branch duplication"
+ },
+ {
+  "key": "latent value",
+  "term": "latent values",
+  "text": "We call the elements of $\\Delta(M)=\\mathcal Z(M)\\setminus\\DSpec(M)$ the latent values of $M$.",
+  "ref": "Section 4.2",
+  "label": "sec:temporary",
+  "source": "text",
+  "alias_of": "latent values"
+ },
+ {
+  "key": "confined latent value",
+  "term": "confined",
+  "text": "Let $T$ be a tree with diameter $d$, rooted at a main root $r$, and let $M\\in\\mathcal S(T)$. A latent value $\\lambda$ of $M$ is confined (with respect to $r$) if every vertex $w$ with $\\hat d_w=0$ in Diagonalize$(M,-\\lambda)$ is a main root of $T$ other than $r$. We write $\\Delta_c(M)$ for the set of confined latent values of $M$.",
+  "ref": "Definition 4.23",
+  "label": "def:confined",
+  "source": "definition",
+  "alias_of": "confined"
+ },
+ {
+  "key": "diminimal tree",
+  "term": "diminimal",
+  "text": "A tree $T$ is said to be diameter minimal, or diminimal for short, if $q(T)=d(T)+1$.",
+  "ref": "Section 3.2",
+  "label": "sec:iepg",
+  "source": "text",
+  "alias_of": "diminimal"
+ },
+ {
+  "key": "main roots",
+  "term": "main root",
+  "text": "Let $T=(V,E)$ be a tree with diameter $d$. (a) If $d=2k$ for some integer $k\\geq0$, then $v\\in V$ is the main root of $T$ if it is the central vertex of a longest path of $T$. (b) If $d=2k+1$ for some integer $k\\geq0$, then $e\\in E$ is the main edge of $T$ if it is the central edge of a longest path of $T$. Each endpoint of $e$ is called a main root of $T$.",
+  "ref": "Definition 3.5",
+  "label": "mainrooteven",
+  "source": "definition",
+  "alias_of": "main root"
+ },
+ {
+  "key": "seeds",
+  "term": "seed",
+  "text": "A seed is a tree that is not an unfolding of any tree with fewer vertices and the same diameter, that is, a tree that is not a diameter-preserving $s$-CBD, with $s\\geq 1$, of a smaller tree.",
+  "ref": "Section 3.3",
+  "label": "sec:branchs",
+  "source": "text",
+  "alias_of": "seed"
+ },
+ {
+  "key": "unfoldings",
+  "term": "unfolding",
+  "text": "A tree obtained from $T$ through a finite, possibly empty, sequence of diameter-preserving CBDs is called an unfolding of $T$, so that every tree is an unfolding of itself.",
+  "ref": "Section 3.3",
+  "label": "sec:branchs",
+  "source": "text",
+  "alias_of": "unfolding"
+ },
+ {
+  "key": "towers",
+  "term": "tower",
+  "text": "Let $k\\geq 3$, let $h$ be an integer with $2\\leq h\\leq k$, and let $H_{h-1}$ and $H_h$ be rooted trees of depths $h-1$ and $h$, respectively. The tower of depth $k$ over the base pair $(H_{h-1},H_h)$ is the sequence $H_{h-1},\\ H_h,\\ H_{h+1},\\ \\ldots,\\ H_k, \\qquad\\text{where}\\quad H_j=H_{j-2}\\odot H_{j-1}\\quad\\text{for } h<j\\leq k.$ Its terms are the levels of the tower, and we identify the tower with its last term $H_k$.",
+  "ref": "Definition 6.29",
+  "label": "def:tower",
+  "source": "definition",
+  "alias_of": "tower"
+ },
+ {
+  "key": "admissible set",
+  "term": "admissible",
+  "text": "Every set $\\{\\lambda_0<\\lambda_1<\\lambda_2\\}$ of three real numbers is admissible. For $k\\geq 2$, a set $\\Lambda=\\{\\lambda_0<\\cdots<\\lambda_{2k}\\}$ is admissible if $\\gamma_L\\neq\\gamma_R$, the interior $\\Lambda_0$ is admissible, and, moreover, $\\Lambda_+$ is admissible when $\\gamma_R>\\gamma_L$, while $\\Lambda_-$ is admissible when $\\gamma_L>\\gamma_R$.",
+  "ref": "Definition 6.17",
+  "label": "def:admissible",
+  "source": "definition",
+  "alias_of": "admissible"
+ },
+ {
+  "key": "good rooted seed",
+  "term": "good",
+  "text": "A rooted seed $R$ of depth $j\\geq3$ is defective if some rooted unfolding of $R$, viewed as a tree, has diameter $2j$ and is not diminimal. Rooted seeds that are not defective are called good. We denote by $b_j$ the number of defective rooted seeds of depth $j$ and set $g_j=\\rho_j-b_j$.",
+  "ref": "Definition 7.13",
+  "label": "def:bad-arm",
+  "source": "definition",
+  "alias_of": "good"
+ },
+ {
+  "key": "defective rooted seed",
+  "term": "defective",
+  "text": "A rooted seed $R$ of depth $j\\geq3$ is defective if some rooted unfolding of $R$, viewed as a tree, has diameter $2j$ and is not diminimal. Rooted seeds that are not defective are called good. We denote by $b_j$ the number of defective rooted seeds of depth $j$ and set $g_j=\\rho_j-b_j$.",
+  "ref": "Definition 7.13",
+  "label": "def:bad-arm",
+  "source": "definition",
+  "alias_of": "defective"
+ },
+ {
+  "key": "standard branch",
+  "term": "standard branches",
+  "text": "Let $k\\geq1$. Let $T$ be a tree of diameter $2k$ with main root $v$. The standard branches of $T$ are the branches of $T$ at $v$ whose depth is exactly $k-1$. If $T$ has diameter $2k+1$ with main edge $\\{r,u\\}$, the standard branches of $T$ at $u$ are the branches of $T$ at $u$, other than the branch containing $r$, whose depth is exactly $k-1$.",
+  "ref": "Definition 4.6",
+  "label": "def:standard",
+  "source": "definition",
+  "alias_of": "standard branches"
+ }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://iepg.mat.br/</loc></url>
+  <url><loc>https://iepg.mat.br/analyze</loc></url>
+  <url><loc>https://iepg.mat.br/playground</loc></url>
+  <url><loc>https://iepg.mat.br/trees/small</loc></url>
+  <url><loc>https://iepg.mat.br/trees/d6</loc></url>
+  <url><loc>https://iepg.mat.br/trees/d7</loc></url>
+  <url><loc>https://iepg.mat.br/trees/large</loc></url>
+  <url><loc>https://iepg.mat.br/seeds/sd</loc></url>
+  <url><loc>https://iepg.mat.br/classes/threshold</loc></url>
+  <url><loc>https://iepg.mat.br/classes/cographs</loc></url>
+  <url><loc>https://iepg.mat.br/classes/unicyclic</loc></url>
+  <url><loc>https://iepg.mat.br/lab/diagonalize</loc></url>
+  <url><loc>https://iepg.mat.br/lab/latent</loc></url>
+  <url><loc>https://iepg.mat.br/lab/admissibility</loc></url>
+  <url><loc>https://iepg.mat.br/lab/build-sd</loc></url>
+  <url><loc>https://iepg.mat.br/lab/towers</loc></url>
+  <url><loc>https://iepg.mat.br/algorithms</loc></url>
+  <url><loc>https://iepg.mat.br/questions</loc></url>
+  <url><loc>https://iepg.mat.br/history</loc></url>
+  <url><loc>https://iepg.mat.br/about</loc></url>
+</urlset>

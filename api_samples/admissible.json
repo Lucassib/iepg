@@ -1,0 +1,324 @@
+{
+ "admissible": false,
+ "tree": {
+  "set": [
+   "0",
+   "1",
+   "3",
+   "4",
+   "7",
+   "8",
+   "11",
+   "12",
+   "16"
+  ],
+  "k": 4,
+  "tested": true,
+  "ok": false,
+  "gammaL": "1",
+  "gammaR": "4",
+  "choice": "+",
+  "mu": "15",
+  "children": [
+   {
+    "role": "interior",
+    "node": {
+     "set": [
+      "1",
+      "3",
+      "4",
+      "7",
+      "8",
+      "11",
+      "12"
+     ],
+     "k": 3,
+     "tested": true,
+     "ok": false,
+     "gammaL": "2",
+     "gammaR": "1",
+     "choice": "-",
+     "mu": "2",
+     "children": [
+      {
+       "role": "interior",
+       "node": {
+        "set": [
+         "3",
+         "4",
+         "7",
+         "8",
+         "11"
+        ],
+        "k": 2,
+        "tested": true,
+        "ok": true,
+        "gammaL": "1",
+        "gammaR": "3",
+        "choice": "+",
+        "mu": "10",
+        "children": [
+         {
+          "role": "interior",
+          "node": {
+           "set": [
+            "4",
+            "7",
+            "8"
+           ],
+           "k": 1,
+           "tested": false,
+           "ok": true,
+           "gammaL": null,
+           "gammaR": null,
+           "choice": null,
+           "mu": null,
+           "children": [],
+           "alternative": null,
+           "fail": ""
+          }
+         },
+         {
+          "role": "lateral",
+          "node": {
+           "set": [
+            "7",
+            "8",
+            "10"
+           ],
+           "k": 1,
+           "tested": false,
+           "ok": true,
+           "gammaL": null,
+           "gammaR": null,
+           "choice": null,
+           "mu": null,
+           "children": [],
+           "alternative": null,
+           "fail": ""
+          }
+         }
+        ],
+        "alternative": [
+         "4",
+         "6",
+         "7"
+        ],
+        "fail": ""
+       }
+      },
+      {
+       "role": "lateral",
+       "node": {
+        "set": [
+         "2",
+         "3",
+         "4",
+         "7",
+         "8"
+        ],
+        "k": 2,
+        "tested": true,
+        "ok": false,
+        "gammaL": "1",
+        "gammaR": "1",
+        "choice": null,
+        "mu": null,
+        "children": [],
+        "alternative": null,
+        "fail": "gamma_L = gamma_R"
+       }
+      }
+     ],
+     "alternative": [
+      "4",
+      "7",
+      "8",
+      "10",
+      "11"
+     ],
+     "fail": "a set below is not admissible"
+    }
+   },
+   {
+    "role": "lateral",
+    "node": {
+     "set": [
+      "3",
+      "4",
+      "7",
+      "8",
+      "11",
+      "12",
+      "15"
+     ],
+     "k": 3,
+     "tested": true,
+     "ok": true,
+     "gammaL": "1",
+     "gammaR": "3",
+     "choice": "+",
+     "mu": "14",
+     "children": [
+      {
+       "role": "interior",
+       "node": {
+        "set": [
+         "4",
+         "7",
+         "8",
+         "11",
+         "12"
+        ],
+        "k": 2,
+        "tested": true,
+        "ok": true,
+        "gammaL": "3",
+        "gammaR": "1",
+        "choice": "-",
+        "mu": "5",
+        "children": [
+         {
+          "role": "interior",
+          "node": {
+           "set": [
+            "7",
+            "8",
+            "11"
+           ],
+           "k": 1,
+           "tested": false,
+           "ok": true,
+           "gammaL": null,
+           "gammaR": null,
+           "choice": null,
+           "mu": null,
+           "children": [],
+           "alternative": null,
+           "fail": ""
+          }
+         },
+         {
+          "role": "lateral",
+          "node": {
+           "set": [
+            "5",
+            "7",
+            "8"
+           ],
+           "k": 1,
+           "tested": false,
+           "ok": true,
+           "gammaL": null,
+           "gammaR": null,
+           "choice": null,
+           "mu": null,
+           "children": [],
+           "alternative": null,
+           "fail": ""
+          }
+         }
+        ],
+        "alternative": [
+         "8",
+         "9",
+         "11"
+        ],
+        "fail": ""
+       }
+      },
+      {
+       "role": "lateral",
+       "node": {
+        "set": [
+         "7",
+         "8",
+         "11",
+         "12",
+         "14"
+        ],
+        "k": 2,
+        "tested": true,
+        "ok": true,
+        "gammaL": "1",
+        "gammaR": "2",
+        "choice": "+",
+        "mu": "13",
+        "children": [
+         {
+          "role": "interior",
+          "node": {
+           "set": [
+            "8",
+            "11",
+            "12"
+           ],
+           "k": 1,
+           "tested": false,
+           "ok": true,
+           "gammaL": null,
+           "gammaR": null,
+           "choice": null,
+           "mu": null,
+           "children": [],
+           "alternative": null,
+           "fail": ""
+          }
+         },
+         {
+          "role": "lateral",
+          "node": {
+           "set": [
+            "11",
+            "12",
+            "13"
+           ],
+           "k": 1,
+           "tested": false,
+           "ok": true,
+           "gammaL": null,
+           "gammaR": null,
+           "choice": null,
+           "mu": null,
+           "children": [],
+           "alternative": null,
+           "fail": ""
+          }
+         }
+        ],
+        "alternative": [
+         "8",
+         "9",
+         "11"
+        ],
+        "fail": ""
+       }
+      }
+     ],
+     "alternative": [
+      "4",
+      "6",
+      "7",
+      "8",
+      "11"
+     ],
+     "fail": ""
+    }
+   }
+  ],
+  "alternative": [
+   "1",
+   "3",
+   "4",
+   "4",
+   "7",
+   "8",
+   "11"
+  ],
+  "fail": "a set below is not admissible"
+ },
+ "theorems": [
+  "Definition 6.17",
+  "Lemma 6.25"
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "thm:brick-diminimal": {
+  "label": "thm:brick-diminimal",
+  "kind": "Theorem",
+  "number": "6.12",
+  "ref": "Theorem 6.12",
+  "title": null,
+  "text": "Let $S$ be a seed of diameter $d$ and suppose that there exists a brick $M\\in\\mathcal{S}(S)$ with respect to some main root $r$ of $S$. Then every matrix in any sequence of regular diameter-preserving ABDs starting with $M$ has the same set of distinct eigenvalues as $M$. In particular, $S$ is diminimal.",
+  "chapter": "chap/05_bricks"
+ },
+ "def:brick": {
+  "label": "def:brick",
+  "kind": "Definition",
+  "number": "6.9",
+  "ref": "Definition 6.9",
+  "title": null,
+  "text": "Let $T$ be a tree with diameter $d$, rooted at a main root $r$, and let $M\\in\\mathcal{S}(T)$. We say that $M$ is a brick (with respect to $r$) if $q(M)=d+1$ and $\\Delta(M)=\\Delta_c(M)$, that is, if $M$ has the minimum number of distinct eigenvalues allowed by Theorem 3.2 and all its latent values are confined.",
+  "chapter": "chap/05_bricks"
+ },
+ "prop:tower-bricks": {
+  "label": "prop:tower-bricks",
+  "kind": "Proposition",
+  "number": "6.31",
+  "ref": "Proposition 6.31",
+  "title": null,
+  "text": "Let $k\\geq 3$, let $T$ be one of the trees $S^{(i,j)}_{2k+1}$, for $1\\leq i,j\\leq 6$, and $S^{[b]}_{2k+1}$, for $4\\leq b\\leq k$, with towers $H$ and $H'$ whose base pairs have depths $h-1$ and $h$, rooted at $r$ and $r'$, let $\\tL_h$ be a set of $2h+1$ real numbers, let $e>\\lmax{h}$ be a real number, let the $\\ell_j$ be as in (6.14), and let $c<\\lmin{k}$. If neither call below returns $\\bot$, then { $\\begin{aligned} M=\\varphi\\Bigl(&TowerChain\\bigl(H,\\tL_h,(\\ell_{h+1},\\ldots,\\ell_k)\\bigr),\\\\ &TowerChain\\bigl(H',\\tL'_h,(\\ell_{h+2},\\ldots,\\ell_{k+1})\\bigr),\\,c\\Bigr) \\end{aligned}$ } is a brick of $T$ with respect to $r$, with $\\mathcal Z(M)=\\{c\\}\\cup\\tL'_k\\cup\\{\\lmin{k}+\\lmaxp{k}-c\\}$ and $\\Delta(M)=\\{\\lmaxp{k}\\}$. Moreover, each of these trees admits, with respect to each of its two main roots, a brick whose set of latent values has a single element.",
+  "chapter": "chap/05_bricks"
+ },
+ "many_seeds": {
+  "label": "many_seeds",
+  "kind": "Theorem",
+  "number": "6.1",
+  "ref": "Theorem 6.1",
+  "title": null,
+  "text": "For every odd $d\\geq 7$ there are at least $21+(d-7)/2$ pairwise non-isomorphic diminimal seeds of diameter $d$, and for every even $d\\geq 8$ there are at least $36+(d-8)/2$. In particular, the number of diminimal seeds of diameter $d$ tends to infinity as $d\\to\\infty$.",
+  "chapter": "chap/05_bricks"
+ },
+ "thm:C": {
+  "label": "thm:C",
+  "kind": "Theorem",
+  "number": "6.2",
+  "ref": "Theorem 6.2",
+  "title": null,
+  "text": "For every $d\\geq 1$, almost every set of $d+1$ real numbers is the set of distinct eigenvalues of a brick of $S_d$.",
+  "chapter": "chap/05_bricks"
+ },
+ "lem:six-arms": {
+  "label": "lem:six-arms",
+  "kind": "Lemma",
+  "number": "6.27",
+  "ref": "Lemma 6.27",
+  "title": null,
+  "text": "Let $\\Lambda=\\{\\lambda_0<\\cdots<\\lambda_6\\}$, let $i\\in\\{1,\\ldots,6\\}$, and suppose that the following conditions hold, where $\\gamma_L=\\lambda_1-\\lambda_0$ and $\\gamma_R=\\lambda_6-\\lambda_5$ are the outer gaps of $\\Lambda$, $\\mu_-=\\lambda_0+\\lambda_6-\\lambda_5$, $\\mu_+=\\lambda_0+\\lambda_6-\\lambda_1$, and $\\Lambda_-=\\{\\mu_-,\\lambda_1,\\ldots,\\lambda_4\\}$ and $\\Lambda_+=\\{\\lambda_2,\\ldots,\\lambda_5,\\mu_+\\}$ are the lateral sets of $\\Lambda$: (C1) for $i=1,2$: $\\lambda_6=\\lambda_1+\\lambda_5-\\lambda_0$; (C2) for $i=2,3,5$: $\\lambda_1+\\lambda_5=\\lambda_2+\\lambda_4$; (C3) for $i=3,4,5$: $\\gamma_L\\neq\\gamma_R$; (C4) for $i=3,4$: $\\mu_-+\\lambda_4=\\lambda_1+\\lambda_3$ if $\\gamma_L>\\gamma_R$, and $\\lambda_2+\\mu_+=\\lambda_3+\\lambda_5$ if $\\gamma_R>\\gamma_L$; (C5) for $i=5$: $\\Lambda_-$ is admissible if $\\gamma_L>\\gamma_R$, and $\\Lambda_+$ is admissible if $\\gamma_R>\\gamma_L$; (C6) for $i=1,4$: $\\{\\lambda_1,\\ldots,\\lambda_5\\}$ is admissible, and for $i=6$: $\\Lambda$ is admissible. Then there is a tight strong realization of $\\Lambda$ in $\\{R_i\\}$, rooted at the root of $R_i$.",
+  "chapter": "chap/05_bricks"
+ }
+}
