@@ -25,7 +25,7 @@ export default function App() {
   const location = useLocation()
   return (
     <AppShell>
-      <PageBoundary key={location.pathname}>
+      <PageBoundary resetKey={location.pathname}>
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -64,10 +64,14 @@ export default function App() {
 }
 
 /** A page that fails to load or to render shows a short message instead of an empty screen. */
-class PageBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
+class PageBoundary extends Component<{ children: ReactNode; resetKey: string }, { failed: boolean }> {
   state = { failed: false }
   static getDerivedStateFromError() {
     return { failed: true }
+  }
+  // a new page clears the message; the pages themselves are not remounted, so /tree/... can hand its tree to /analyze
+  componentDidUpdate(prev: { resetKey: string }) {
+    if (prev.resetKey !== this.props.resetKey && this.state.failed) this.setState({ failed: false })
   }
   render() {
     if (!this.state.failed) return this.props.children
