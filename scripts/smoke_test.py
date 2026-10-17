@@ -34,7 +34,7 @@ check("nosniff header", h.get("X-Content-Type-Options", h.get("x-content-type-op
 s, h, b = get("/playground")
 check("client route served by the SPA", s == 200 and b"<div id=\"root\">" in b, s)
 s, h, b = get("/robots.txt")
-check("robots.txt", s == 200 and b"User-agent" in b, s)
+check("robots.txt keeps search engines out", s == 200 and b"Disallow: /\n" in b, s)
 s, h, b = get("/api/v1/health")
 check("health", s == 200 and json.loads(b) == {"ok": True}, s)
 s, h, b = get("/api/v1/meta")

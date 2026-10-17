@@ -782,7 +782,7 @@ from fastapi.staticfiles import StaticFiles  # noqa: E402
 _DIST = _Path(config.DIST).resolve()
 if (_DIST / "index.html").exists():
     app.mount("/assets", StaticFiles(directory=_DIST / "assets"), name="assets")
-    # the files at the top of dist (favicon, robots.txt, sitemap, the theme script), listed once: nothing else is served;
+    # the files at the top of dist (favicon, robots.txt, the theme script), listed once: nothing else is served;
     # "index 2.html" and the like are copies left by file synchronization, not files of the site
     _TOP = {p.name: p for p in _DIST.iterdir() if p.is_file() and not _re.search(r" \d+\.\w+$", p.name)}
 

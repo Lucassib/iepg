@@ -13,6 +13,8 @@ As in the bibliography of the thesis:
   eigenvalues of trees. https://iepg.mat.br, 2026.
 - Allem, L. E., Hoppen, C., and Sibemberg, L. S. IEP-G: source code. https://github.com/Lucassib/iepg, 2026. GitHub repository.
 
+Search engines are asked not to index the site for now (`robots.txt` and the header `X-Robots-Tag`).
+
 License: MIT for the code (`LICENSE`), CC BY 4.0 for the data in `backend/data`.
 
 ## The compiled copy of the thesis

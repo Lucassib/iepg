@@ -49,6 +49,8 @@ SECURITY_HEADERS = [
     (b"referrer-policy", b"strict-origin-when-cross-origin"),
     (b"cross-origin-opener-policy", b"same-origin"),
     (b"permissions-policy", b"camera=(), microphone=(), geolocation=(), payment=(), usb=()"),
+    # not indexed for now, even when a search engine reaches a page through a link from elsewhere
+    (b"x-robots-tag", b"noindex, nofollow"),
 ]
 HSTS = (b"strict-transport-security", b"max-age=31536000; includeSubDomains")
 

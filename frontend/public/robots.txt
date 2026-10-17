@@ -1,3 +1,3 @@
+# The site is not indexed by search engines for now; its pages stay open to anyone with the address.
 User-agent: *
-Allow: /
-Sitemap: https://iepg.mat.br/sitemap.xml
+Disallow: /
